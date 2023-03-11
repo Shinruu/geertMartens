@@ -1,14 +1,14 @@
 /*
-=============== 
+--------------- 
 Fonts
-===============
+---------------
 */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
 /*
-=============== 
+--------------- 
 Variables
-===============
+---------------
 */
 /* linear-gradient(rgba(44, 174, 186, 0.329), rgba(0, 0, 0, 0.7)) */
 :root {
@@ -46,9 +46,9 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 /*
-=============== 
+--------------- 
 Global Styles
-===============
+---------------
 */
 
 * {
@@ -152,7 +152,6 @@ p {
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
-  /* font-weight: 700; */
   -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 0.875rem;
@@ -189,9 +188,9 @@ p {
   }
 }
 /*
-=============== 
+--------------- 
 Navbar
-===============
+---------------
 */
 .navbar {
   position: fixed;
@@ -202,9 +201,7 @@ Navbar
   box-shadow: var(--dark-shadow);
   z-index: 2;
 }
-/* .nav-icons {
-  display: none;
-} */
+
 .nav-center {
   width: 100%;
   max-width: 1170px;
@@ -232,7 +229,7 @@ Navbar
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-/* look at this tomorrow morning */
+
 .nav-link {
   display: block;
   padding: 1rem 2rem;
@@ -312,7 +309,7 @@ Navbar
     color: var(--clr-grey-5);
   }
 }
-/* LOGO IN MIDDLE BETTER */
+/* LOGO IN MIDDLE */
 @media screen and (min-width: 668px) {
   /* hide toggle button */
   .navbar {
@@ -359,9 +356,9 @@ Navbar
 }
 
 /*
-=============== 
+--------------- 
 Hero
-===============
+---------------
 */
 .hero {
   min-height: 100vh;
@@ -438,9 +435,9 @@ p.phone-number-two {
 }
 
 /*
-=============== 
+--------------- 
 About
-===============
+---------------
 */
 /* section add to globals */
 /* title add to globals */
@@ -459,7 +456,6 @@ About
 }
 .btn-lid-van {
   float: right;
-  /* button hight might need to change this later */
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 992px) {
@@ -480,9 +476,9 @@ About
   }
 }
 /*
-=============== 
+--------------- 
 Services
-===============
+---------------
 */
 .services {
   background: var(--clr-grey-10);
@@ -537,9 +533,9 @@ Services
   }
 }
 /*
-=============== 
+--------------- 
 Metaal en ijzer
-===============
+---------------
 */
 .metal-card {
   -webkit-transition: var(--transition);
@@ -561,8 +557,7 @@ Metaal en ijzer
   -o-object-fit: cover;
   object-fit: cover;
 }
-/* maybe remove if it doenst look nice its in the right 
-down corner */
+
 .metal-date {
   position: absolute;
   right: 0;
@@ -617,9 +612,9 @@ down corner */
   }
 }
 /*
-=============== 
+--------------- 
 Contact
-===============
+---------------
 */
 .contact {
   background: gray;
@@ -668,12 +663,6 @@ Contact
   color: inherit;
 }
 .btn-submit {
-  /* font-family: var(--ff-primary);
-  margin-left: 0.5rem;
-  background: var(--clr-grey-5);
-  color: var(--clr-grey-2);
-  cursor: pointer;
-  transition: var(--transition); */
   text-transform: uppercase;
   background: var(--clr-grey-4);
   color: var(--clr-white);
@@ -704,7 +693,6 @@ Contact
     align-items: center;
   }
   .contact-form {
-    /* align-self: flex-start; */
     -webkit-box-flex: 0;
     flex: 0 1 auto;
     max-width: 100%;
@@ -776,7 +764,6 @@ Contact
     flex: 0 1 auto;
     max-width: 100%;
     padding-left: 2rem;
-    /* margin-right: 20rem; */
     margin-left: 0.2rem;
     width: 2rem;
     font-size: larger;
@@ -790,15 +777,15 @@ Contact
 }
 
 /*
-=============== 
+--------------- 
 Gallery
-===============
+---------------
 */
 
 /*
-=============== 
+--------------- 
 Footer
-===============
+---------------
 */
 .footer {
   background: var(--clr-grey-2);
@@ -831,14 +818,6 @@ Footer
   letter-spacing: var(--spacing);
   color: var(--clr-white);
 }
-/* hr {
-  width: 25%;
-  height: 0px;
-  border-style: dotted;
-  border-bottom: 1px;
-  border-width: 20px;
-  margin-left: 10rem;
-} */
 
 .service-text left {
   position: absolute;
