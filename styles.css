@@ -638,7 +638,7 @@ Contact
 }
 .form-control,
 .btn-submit {
-  padding: 0.375rem 0.75rem;
+  /* padding: 0.375rem 0.75rem; */
   font-size: 1rem;
   line-height: 2rem;
   font-weight: 300;
@@ -666,7 +666,7 @@ Contact
   text-transform: uppercase;
   background: var(--clr-grey-4);
   color: var(--clr-white);
-  padding: 0.375rem 1.31rem;
+  padding: 0.375rem 1.55rem;
   letter-spacing: var(--spacing);
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -676,6 +676,10 @@ Contact
   background: var(--clr-grey-1);
   color: var(--clr-white);
   box-shadow: var(--dark-shadow);
+}
+
+#fs-frm-inputs {
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 992px) {

@@ -413,7 +413,7 @@
         </article>
         <!-- contact form -->
         <form
-          action="https://formspree.io/f/xknylknd"
+          action="https://formspree.io/f/mzbqvaoe"
           method="POST"
           class="contact-form"
         >
@@ -439,7 +439,7 @@
                 type="email"
                 name="_replyto"
                 id="email-address"
-                placeholder="E-mail"
+                placeholder="Email"
                 required=""
               />
               <label for="telephone">Telefoonnummer</label>
@@ -450,7 +450,7 @@
                 placeholder="Telefoonnummer"
                 required=""
               />
-              <label for="complaint">Adres</label>
+              <label for="text">Adres</label>
               <input
                 type="huisadres"
                 name="huisadres"
@@ -458,7 +458,7 @@
                 placeholder="Straat en huisnummer" 
                 required=""
               />
-              <label for="complaint">Gemeente</label>
+              <label for="text">Gemeente</label>
               <input
                 type="gemeente"
                 name="gemeente"
@@ -466,11 +466,11 @@
                 placeholder="Gemeente"
                 required=""
               />
-              <label for="complaint">Bericht</label>
+              <label for="message">Bericht</label>
               <textarea
                 rows="10"
-                name="complaint"
-                id="complaint"
+                name="message"
+                id="message"
                 placeholder="Typ hier uw bericht"
                 required=""
               ></textarea>
@@ -478,7 +478,7 @@
                 type="hidden"
                 name="_subject"
                 id="email-subject"
-                value="Complaint Form Submission"
+                value="Contact Form Submission"
               />
             </fieldset>
             <input type="submit" value="Verzenden" class="btn-submit" id="contact-us-verzenden" />
@@ -523,5 +523,12 @@
     <!-- end of footer -->
     <script src="./apps.js"></script>
     <script src="cookies.js"></script>
+    <script>
+      window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+    </script>
   </body>
 </html>
