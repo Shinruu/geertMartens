@@ -646,6 +646,7 @@ Contact
   background: var(--clr-white);
   text-transform: capitalize;
   border: transparent;
+  margin-left: 1vw;
 }
 .form-control::-webkit-input-placeholder {
   color: inherit;
@@ -736,7 +737,6 @@ Contact
     padding-left: 2rem;
     margin-right: auto;
     margin-left: auto;
-
     width: 1rem;
     font-size: larger;
   }
@@ -757,7 +757,6 @@ Contact
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-direction: row;
-
     align-content: stretch;
     -webkit-box-align: center;
     align-items: center;
